@@ -1,106 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Simplilearn Clone - One Page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simplilearn Clone</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body class="bg-white text-gray-800 font-sans">
+<body class="text-gray-800">
   <!-- Header -->
-  <header class="bg-white shadow p-4 flex justify-between items-center">
-    <h1 class="text-xl font-bold text-orange-500">Simplilearn</h1>
-    <nav class="space-x-4">
-      <a href="#programs" class="hover:underline">Programs</a>
-      <a href="#why" class="hover:underline">Why Us</a>
-      <a href="#stories" class="hover:underline">Stories</a>
-      <a href="#partners" class="hover:underline">Partners</a>
+  <header class="flex justify-between items-center px-6 py-4 bg-white shadow-md sticky top-0 z-50">
+    <h1 class="text-orange-500 font-bold text-xl">Simplilearn</h1>
+    <nav class="space-x-6 text-sm">
+      <a href="#programs" class="hover:text-blue-600">Programs</a>
+      <a href="#reviews" class="hover:text-blue-600">Reviews</a>
+      <a href="#alumni" class="hover:text-blue-600">Alumni</a>
+      <a href="#partners" class="hover:text-blue-600">Partners</a>
     </nav>
   </header>
 
   <!-- Hero Section -->
-  <section class="bg-gray-100 py-12 text-center">
-    <h2 class="text-4xl font-bold mb-2">Get Certified. Get Ahead.</h2>
-    <p class="mb-4">Online bootcamps from top universities and companies</p>
+  <section class="text-center bg-gray-100 py-12 px-4">
+    <h2 class="text-4xl font-bold mb-4">Get Certified. Get Ahead.</h2>
+    <p class="text-lg mb-6">Online Bootcamp Courses from Top Universities</p>
     <button class="bg-blue-600 text-white px-6 py-2 rounded">Explore Programs</button>
   </section>
 
-  <!-- Top Universities -->
-  <section class="bg-white py-8 text-center">
-    <h3 class="text-xl font-semibold mb-4">In partnership with</h3>
-    <div class="flex justify-center gap-6">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Michigan_University_seal.svg" class="h-10" alt="University of Michigan">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/5/56/Google_logo.png" class="h-8" alt="Google">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/7/74/Purdue_University_wordmark.svg" class="h-10" alt="Purdue">
-    </div>
+  <!-- Logos Section -->
+  <section class="flex justify-center items-center flex-wrap gap-8 py-6 bg-white">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Michigan_University_seal.svg" class="h-10" alt="UMich">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/56/Google_logo.png" class="h-8" alt="Google">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/7/74/Purdue_University_wordmark.svg" class="h-10" alt="Purdue">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/IBM_logo.svg" class="h-10" alt="IBM">
   </section>
 
-  <!-- Programs Section -->
-  <section id="programs" class="bg-gray-50 py-10 px-4">
-    <h3 class="text-2xl font-bold text-center mb-6">Explore Our Top Programs</h3>
+  <!-- Top Programs -->
+  <section id="programs" class="bg-blue-50 py-12 px-6">
+    <h3 class="text-3xl font-bold text-center mb-8">Explore Our Top Programs</h3>
     <div class="grid md:grid-cols-3 gap-6">
-      <div class="bg-white p-4 shadow rounded">
-        <h4 class="font-semibold">Full Stack Developer</h4>
-        <p>Learn MERN Stack with hands-on projects</p>
+      <div class="bg-white shadow-md p-4 rounded">
+        <h4 class="text-xl font-semibold">Data Science</h4>
+        <p>Master Python, SQL, and ML from scratch.</p>
       </div>
-      <div class="bg-white p-4 shadow rounded">
-        <h4 class="font-semibold">Data Science</h4>
-        <p>Master data analytics, Python, and ML</p>
+      <div class="bg-white shadow-md p-4 rounded">
+        <h4 class="text-xl font-semibold">Full Stack Developer</h4>
+        <p>Become a MERN stack pro with hands-on training.</p>
       </div>
-      <div class="bg-white p-4 shadow rounded">
-        <h4 class="font-semibold">Digital Marketing</h4>
-        <p>SEO, SEM, Social Media, and more</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Stories Section -->
-  <section id="stories" class="bg-white py-10 px-4">
-    <h3 class="text-2xl font-bold text-center mb-6">Real Stories, Real Success</h3>
-    <div class="flex flex-col md:flex-row gap-6 justify-center">
-      <div class="bg-gray-100 p-4 rounded">
-        <p>"Simplilearn helped me transition into tech easily!"</p>
-        <span class="text-sm">- John D., Full Stack Developer</span>
-      </div>
-      <div class="bg-gray-100 p-4 rounded">
-        <p>"I landed a job at a top MNC after the bootcamp."</p>
-        <span class="text-sm">- Priya K., Data Analyst</span>
+      <div class="bg-white shadow-md p-4 rounded">
+        <h4 class="text-xl font-semibold">Digital Marketing</h4>
+        <p>Learn SEO, PPC, and social media from experts.</p>
       </div>
     </div>
   </section>
 
-  <!-- Why Us Section -->
-  <section id="why" class="bg-blue-50 py-10 px-4">
-    <h3 class="text-2xl font-bold text-center mb-6">Why Choose Simplilearn?</h3>
+  <!-- Reviews / Metrics -->
+  <section id="reviews" class="py-12 px-6 text-center bg-white">
+    <h3 class="text-2xl font-bold mb-4">Real Stories, Incredible Journeys</h3>
+    <div class="flex justify-center gap-8">
+      <div>
+        <h4 class="text-3xl font-bold text-blue-600">80%</h4>
+        <p>Career Transitions</p>
+      </div>
+      <div>
+        <h4 class="text-3xl font-bold text-blue-600">4.8/5</h4>
+        <p>Average Rating</p>
+      </div>
+      <div>
+        <h4 class="text-3xl font-bold text-blue-600">50%+</h4>
+        <p>Salary Increase</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Alumni Testimonials -->
+  <section id="alumni" class="bg-gray-50 py-12 px-6">
+    <h3 class="text-2xl font-bold text-center mb-6">What Our Alumni Say</h3>
+    <div class="flex flex-col md:flex-row gap-6 justify-center items-center">
+      <div class="bg-white shadow-md p-4 rounded max-w-md">
+        <p>"I transitioned from sales to software development thanks to Simplilearn!"</p>
+        <span class="text-sm block mt-2">- Christian Lopez</span>
+      </div>
+      <div class="bg-white shadow-md p-4 rounded max-w-md">
+        <p>"The project-based learning and support helped me get placed in an MNC."</p>
+        <span class="text-sm block mt-2">- Sarah Kim</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Section -->
+  <section class="bg-white py-12 px-6">
+    <h3 class="text-2xl font-bold text-center mb-6">Why Our Programs Stand Out</h3>
     <div class="grid md:grid-cols-3 gap-6">
-      <div class="bg-white p-4 rounded shadow">
-        <h4 class="font-semibold">Industry-Expert Instructors</h4>
-        <p>Learn from professionals with real-world experience</p>
+      <div class="bg-blue-50 p-4 rounded">
+        <h4 class="font-semibold">Curated Curriculum</h4>
+        <p>Built by top industry leaders & experts.</p>
       </div>
-      <div class="bg-white p-4 rounded shadow">
-        <h4 class="font-semibold">Practical Learning</h4>
-        <p>Projects, assignments, and labs included</p>
+      <div class="bg-blue-50 p-4 rounded">
+        <h4 class="font-semibold">Live Classes</h4>
+        <p>Interactive sessions with mentors.</p>
       </div>
-      <div class="bg-white p-4 rounded shadow">
-        <h4 class="font-semibold">Global Recognition</h4>
-        <p>Certificates accepted by top companies</p>
+      <div class="bg-blue-50 p-4 rounded">
+        <h4 class="font-semibold">Job Assistance</h4>
+        <p>Placement support & mock interviews.</p>
       </div>
     </div>
   </section>
 
-  <!-- Partners -->
-  <section id="partners" class="bg-white py-10 px-4 text-center">
-    <h3 class="text-2xl font-bold mb-6">Trusted by Top Brands</h3>
-    <div class="flex justify-center flex-wrap gap-6">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Dell_Logo.svg" class="h-8" alt="Dell">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/IBM_logo.svg" class="h-8" alt="IBM">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" class="h-6" alt="Amazon">
+  <!-- Partner Logos -->
+  <section id="partners" class="bg-gray-100 py-12 px-6 text-center">
+    <h3 class="text-2xl font-bold mb-4">Trusted by Top Brands</h3>
+    <div class="flex justify-center gap-8 flex-wrap">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Dell_Logo.svg" class="h-10" alt="Dell">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Amazon_logo.svg" class="h-8" alt="Amazon">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/1/10/Bosch_logo.svg" class="h-10" alt="Bosch">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/56/Airbus_logo_2017.svg" class="h-8" alt="Airbus">
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-gray-900 text-white text-center py-6 mt-12">
-    <p>&copy; 2025 Simplilearn Clone. All rights reserved.</p>
+  <footer class="bg-gray-900 text-white text-sm text-center py-6">
+    <p>&copy; 2025 Simplilearn Clone | Designed for learning & demo purposes only.</p>
   </footer>
 </body>
 </html>
